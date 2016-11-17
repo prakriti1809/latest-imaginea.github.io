@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Imaginea GitHub</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="bower_components/html5shiv/dist/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <META NAME="description" CONTENT="Imaginea: Open Source Initiatives" />
+    <META NAME="keywords" CONTENT="Imaginea, Open Source" />
+    <META NAME="published" CONTENT="Dec 2, 2011" />
+    <META NAME="robots" CONTENT="index" />
+    <script>
+        // GA tracking
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-43907552-1', 'imaginea.github.io');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+    <div class="home dView">
+        <div class="header-container" id="header-container">
+            <header class="header">
+                <nav class="navbar" role="navigation">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/">
+                            <span class="company-logo">
+                                <img src="assets/images/Imaginea-Logo.png" alt="Imaginea logo">
+                            </span>
+                        </a>
+                        <button type="button" class="navbar-toggle collapsed">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                    <div class="collapse navbar-collapse" id="global-nav">
+                        <div class="navbar-right">
+                            <ul class="navbar-nav">
+                                <li>
+                                    <a class="all-projects">PROJECTS</a>
+                                </li>
+                                <li>
+                                    <a href="http://blog.imaginea.com" target="_blank">BLOG</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.imaginea.com/about/careers" target="_blank">CAREERS</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.imaginea.com/contact" target="_blank">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <!-- front-page -->
+        <div class="page-container container-fluid">
+            <div class="main-content-wrapper">
+                <article class="article">
+                    <div class="section-wrapper">
+                        <div class="about-page section" data-bgcolor="#009DE6">
+                            <div class="about-us-section">
+                                <!--<div class="gearbox">-->
+                                    <!--<div class="gear one">-->
+                                        <!--<div class="gear-inner">-->
+                                            <!--<div class="bar"></div>-->
+                                            <!--<div class="bar"></div>-->
+                                            <!--<div class="bar"></div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="gear two">-->
+                                        <!--<div class="gear-inner">-->
+                                            <!--<div class="bar"></div>-->
+                                            <!--<div class="bar"></div>-->
+                                            <!--<div class="bar"></div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="gear three">-->
+                                        <!--<div class="gear-inner">-->
+                                            <!--<div class="bar"></div>-->
+                                            <!--<div class="bar"></div>-->
+                                            <!--<div class="bar"></div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="gear four large">-->
+                                        <!--<div class="gear-inner">-->
+                                            <!--<div class="bar"></div>-->
+                                            <!--<div class="bar"></div>-->
+                                            <!--<div class="bar"></div>-->
+                                            <!--<div class="bar"></div>-->
+                                            <!--<div class="bar"></div>-->
+                                            <!--<div class="bar"></div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <div class="about-us-details">
+                                    <h1 class="engineering-imaginea">ENGINEERING AT IMAGINEA</h1>
+                                    <p class="about-us">
+                                        <span class="about-us-line-1">We at imaginea believe in contributing back to the open source community.</span>
+                                        <span class="about-us-line-2">This page lists some of our github projects and gives bird's eyeview of the</span>
+                                        <span class="about-us-line-3">technology and functionality that they cater to.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="home-list-wrapper section-wrapper" id="home-list"></div>
+                </article>
+            </div>
+            <div class="loader-wrapper">
+                <div class="loader"></div>
+            </div>
+            <div class="projects-list-container">
+                <div class="all-projects-header-container"> 
+                    <div class="all-projects-header">All Projects</div>
+                    <select id="projects-filter">
+                        <option value="" selected="selected">All Projects</option>
+                    </select>
+                </div>
+                <div id="all-project-list" class="projects-list-wrapper"></div>     
+            </div>
+            <!--  footer -->
+            <div class="footer-wrapper">
+                <div class="view-all text-center all-projects">
+                    <a class="btn btn-link">VIEW ALL PROJECTS
+                        <img src="assets/images/arrow.png" alt="View All">
+                    </a>
+                </div>
+                <div class="cotainer-fluid">
+                    <div class="message">
+                        <h1>WANT TO WORK WITH US?</h1>
+                        <p class="message text-center">Join the team, we're hiring! Here are some of our current open positions:</p>
+                    </div>
+                    <div class="current-openings-btn">
+                        <a class="btn current-openings-link" href="http://www.imaginea.com/about/careers" target="_blank">VIEW
+                        CURRENT OPENINGS</a>
+                    </div>
+                    <div class="contact-div">
+                        <a class="contact-link" href="http://www.imaginea.com/contact" target="_blank">Contact</a>
+                        <span class="copyright-info">All Rights Reserved. © 2016, Pramati</span>
+                    </div>
+                </div>
+                <div class="bottom-colors-bar">
+                    <div class="bar bar1 col-xs-5ths"></div>
+                    <div class="bar bar2 col-xs-5ths"></div>
+                    <div class="bar bar3 col-xs-5ths"></div>
+                    <div class="bar bar4 col-xs-5ths"></div>
+                    <div class="bar bar5 col-xs-5ths"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dOverlay" class="dOverlay no-width">
+        <a href="javascript:void(0)" id="closeBtn">&times;</a>
+        <div class="content-mask">
+            <a class="all-projects">PROJECTS</a>
+            <a href="http://blog.imaginea.com" target="_blank">BLOG</a>
+            <a href="http://www.imaginea.com/about/careers" target="_blank">CAREERS</a>
+            <a href="http://www.imaginea.com/contact" target="_blank">CONTACT</a>
+        </div>
+    </div>
+
+    <script type="text/x-jsrender" id="project-card-tmpl">
+        <div class="project-card-tmpl section" data-bgcolor="{{:bgcolor}}">
+            <img src="{{:projectIcon}}" alt="Image Responsive" class="img-responsive center-block product-sc-img">
+            <div class="project-card">
+                <div class="project-heading">
+                    <img src="{{:projectLogo}}" alt="" class="{{:showProjectLogo}}">
+                    <span class="project-name">{{:name}}</span>
+                </div>
+                <div class="project-description">{{:description}}</div>
+                <div class="project-details">
+                    <div class="field-type">
+                        <img src="assets/images/icon-01.png" alt="Category">
+                        <span class="field-value language">{{:language}}</span>
+                    </div>
+                    <div class="field-type">
+                        <img src="assets/images/icon-02.png" alt="Date of Creation">
+                        <span class="field-value creationDate">Created {{:creationDate}}</span>
+                    </div>
+                    <div class="field-type">
+                        <img src="assets/images/icon-03.png" alt="Last updated">
+                        <span class="field-value updateDate">Updated {{:updateDate}}</span>
+                    </div>
+                    <div class="field-type">
+                        <img src="assets/images/icon-04.png" alt="Views">
+                        <span class="field-value watchers">{{:watchers}}</span>
+                    </div>
+                    <div class="field-type">
+                        <img src="assets/images/icon-05.png" alt="Downloads/Forks">
+                        <span class="field-value downloads"></span>
+                    </div>
+                </div>
+                <div class="github-link-wrapper">
+                    <a class="btn github-link col-sm-4" href="{{:gitHubUrl}}" target="_blank">VIEW ON GITHUB</a>
+                </div>
+            </div>
+        </div>
+    </script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="dist/bundle.js"></script>
+</body>
+</html>

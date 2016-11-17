@@ -1,0 +1,120 @@
+
+.footer-wrapper {
+    background: #2E2E2E;
+    color: #ffffff;
+    padding: 2px 0;
+    position: relative;
+}
+.footer-wrapper .view-all {
+    background: #2E2E2E;
+    padding: 1em;
+    border-bottom: 1px solid #5a5858;
+}
+
+.footer-wrapper .view-all .btn-link {
+    color: white;
+    font-weight: 600;
+    font-size: 100%;
+    padding: 0.25em 0;
+    border-bottom: 2px solid transparent;
+}
+
+.footer-wrapper .view-all .btn-link:hover {
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.footer-wrapper .view-all img {
+    height: 15px;
+    width: 20px;
+    margin: 0 2px 2px;
+}
+.footer-wrapper .current-openings-btn {
+    margin: 20px auto;
+    width: 210px;
+    text-align: center;
+}
+.footer-wrapper .current-openings-link {
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid white;
+}
+.footer-wrapper .current-openings-link:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    -webkit-transition: transform 0.2s ease-in-out;
+    -moz-transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+}
+.footer-wrapper .current-openings-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1em;
+}
+.footer-wrapper .contact-div {
+    display: flex;
+    border-top: 1px solid #5a5858;
+    margin: 0 5em;
+    padding: 1em 0;
+} 
+.footer-wrapper .contact-div .contact-link {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-weight: 600;
+}
+.footer-wrapper .contact-div .contact-link:hover {
+    color: #ffffff;
+    border-bottom: 2px solid white;
+}
+.bottom-colors-bar {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.bar {
+    height: 5px;
+}
+.bar1 {
+    background: #56C6D0;
+}
+.bar2 {
+    background: #587ABD;
+}
+.bar3 {
+    background: #8A73B4;
+}
+.bar4 {
+    background: #F01B49;
+}
+.bar5 {
+    background: #FD9403;
+}
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 0.7px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+@media only screen and (min-width: 768px) {
+    .footer-wrapper .contact-div {
+        align-items: baseline;
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .footer-wrapper .contact-div {
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0 1em;
+    }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "imaginea-github-io",
+  "version": "1.0.0",
+  "description": "A repo for some of our github projects",
+  "src/app": "src/app.js",
+  "scripts": {
+    "dev": "lite-server -c configs/bs-config.js",
+    "build-dev": "browserify -t browserify-css src/app.js > dist/bundle.js",
+    "start": "npm run build-dev",
+    "watch": "npm run start && watchify src/app.js -o dist/bundle.js -v",
+    "build": "browserify src/app.js  | uglifyjs -mc warnings=false > dist/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Imaginea/imaginea.github.com.git"
+  },
+  "author": "Manohara Babu Chennuru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Imaginea/imaginea.github.com/issues"
+  },
+  "homepage": "https://github.com/Imaginea/imaginea.github.com#readme",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "jsrender": "^0.9.82"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "browserify-css": "^0.9.2",
+    "connect-history-api-fallback": "^1.3.0",
+    "html5shiv": "^3.7.3",
+    "lite-server": "^2.2.2",
+    "uglify-js": "^2.7.4",
+    "watchify": "^3.7.0"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-css"
+    ]
+  }
+}

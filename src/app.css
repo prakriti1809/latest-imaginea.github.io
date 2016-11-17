@@ -1,0 +1,56 @@
+html {
+    font-size:100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    background: #009DE6;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Raleway-Light', serif;
+    transition: background 1s ease;
+}
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 110%
+    }
+}
+@media screen and (max-width: 768px) {
+    p {
+        text-align: justify;
+        padding: 0 1em 1em;
+    }
+}
+p {
+    font-size: 120%;
+    margin: 0 0 10px;
+    font-weight: 700
+}
+h1 {
+    font-size: 200%;
+    color: white;
+    font-family: 'Raleway-Light', serif;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-weight: bold;
+}
+ul {
+    line-height: 200%;
+}
+
+@import url("./css/header.css");
+@import url("./css/front-page.css");
+@import url("./css/templates.css");
+@import url("./css/footer.css");
+
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url('../assets/fonts/Raleway-Light.otf');
+}
+
+
+
+

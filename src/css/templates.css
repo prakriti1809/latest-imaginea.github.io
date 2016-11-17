@@ -1,0 +1,131 @@
+.projects-list-container {
+    display: none;
+}
+.projects-list-wrapper .project-card-tmpl.section {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.projects-list-wrapper .project-card {
+    background-color: #58595b;
+    color: #ffffff;
+    padding: 20px 20px 45px 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+.projects-list-wrapper .project-heading {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+.project-description {
+    line-height: 2.2;
+    padding: 5px;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+.projects-list-wrapper .github-link {
+    text-align: center;
+    background: #636466;
+    padding: 10px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.main-content-wrapper .github-link-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+.projects-list-wrapper {
+    padding: 0 5em 1em;
+    display: flex;
+    flex-flow: row wrap;
+}
+.projects-list-container .all-projects-header-container {
+    padding: 3em 5.5em;
+}
+.projects-list-container .all-projects-header {
+    color: black;
+    padding-top: 12px;
+    font-size: 24px;
+}
+.project-details {
+    margin: 30px 0;
+}
+
+.hide, .show + .project-name  {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    #projects-filter {
+        border: 2px solid #ABACAD;
+        color: black;
+        width: 150px;
+        height: 40px;
+        float: right;
+    }
+    .projects-list-container .all-projects-header {
+        color: black;
+        float: left;
+        padding-top: 12px;
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main-content-wrapper .github-link-wrapper {
+        justify-content: center;
+    }
+    .projects-list-wrapper {
+        padding: 0 0.2em 1em
+    }
+    .projects-list-wrapper .project-card-tmpl.section {
+        width: 100%;
+        padding: 0.5em;
+    }
+    .projects-list-container .all-projects-header-container {
+        text-align: center;
+    }
+    #projects-filter {
+        display: none;
+    }
+    .projects-list-wrapper .project-card {
+        /*height: 60vh;*/
+        position: relative;
+    }
+    .projects-list-wrapper .github-link-wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .projects-list-wrapper .project-card .github-link {
+        margin-bottom: 0;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .projects-list-wrapper .project-card-tmpl.section {
+        width: 33.33%;
+        padding: 0.5em;
+    }
+    .projects-list-wrapper .project-card {
+        /*height: 60vh;*/
+        position: relative;
+    }
+    .projects-list-wrapper .github-link-wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .projects-list-wrapper .project-card .github-link {
+        margin-bottom: 0;
+        width: 100%;
+    }
+}
